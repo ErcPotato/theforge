@@ -1,0 +1,146 @@
+body {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.main-header {
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.card {
+  box-shadow: 0 4px 12px rgba(100, 120, 150, 0.15);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(100, 120, 150, 0.25);
+}
+
+.card.done {
+  background: #f8f9fa;
+  border-left: 5px solid #4a90e2;
+}
+
+.card.done::before {
+  content: "✓";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 48px;
+  color: #4a90e2;
+  opacity: 0.08;
+  font-weight: bold;
+}
+
+.item-done {
+  background-color: #f8f9fa;
+  border-left: 3px solid #4a90e2;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.qty-input {
+  width: 90px;
+}
+
+.add-recipe-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(100, 120, 150, 0.12);
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.progress-bar-container {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #4a90e2;
+  transition: width 0.3s ease;
+  border-radius: 10px;
+}
+
+.stats-badge {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.btn-primary {
+  background: #4a90e2;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background: #357abd;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+}
+
+.btn-outline-primary {
+  color: #4a90e2;
+  border-color: #4a90e2;
+}
+
+.btn-outline-primary:hover {
+  background: #4a90e2;
+  border-color: #4a90e2;
+}
+
+.btn-outline-success {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-success:hover {
+  background: #6c757d;
+  border-color: #6c757d;
+}
+
+.modal-content {
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 10px 30px rgba(100, 120, 150, 0.2);
+}
+
+.list-group-item {
+  border-radius: 8px !important;
+  margin-bottom: 5px;
+  transition: all 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.done-checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.badge.bg-secondary {
+  background: #6c757d !important;
+}
